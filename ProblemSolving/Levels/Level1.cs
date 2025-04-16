@@ -139,7 +139,51 @@ public class Level1
             Console.WriteLine(array[i]);
         }
     }
+
+    public void FindMax(int[] array)
+    {
+        if (CheckIfArrayIsEmpty(array))
+        {
+            Console.WriteLine("Array is empty");
+            return;
+        }
+        
+        int max = array[0];
+
+        for (int i = 1; i < array.Length; i++)
+        {
+            if (array[i] > max)
+            {
+                max = array[i];
+            }
+        }
+        Console.WriteLine(max);
+    }
     
+    public void FindMin(int[] array)
+    {
+        if (CheckIfArrayIsEmpty(array))
+        {
+            Console.WriteLine("Array is empty");
+            return;
+        }
+        int min = array[0];
+
+        for (int i = 1; i < array.Length; i++)
+        {
+            if (array[i] < min)
+            {
+                min = array[i];
+            }
+        }
+        Console.WriteLine(min);
+    }
+
+
+    private static bool CheckIfArrayIsEmpty(int[]? array)
+    {
+        return array == null || array.Length == 0;
+    }
     private static int GenerateRandomNumber()
     {
         return random.Next();

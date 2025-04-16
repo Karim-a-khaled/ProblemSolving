@@ -6,17 +6,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Level1.InvertedNumberAsc(4);
-        //Level1.InvertedLetterAsc(4);
-        //Level1.InvertedLetterDec(4);
-        //Level1.Encrypt("mohammad", 2);
-        //Level1.Dcrypt("OQJCOOCF", 2, '-');
-        //Level1.RandomNumber(1, 30, 3);
-        //Level1.GenerateKeys();
-        //Level1.RepeatedNumber(1113,1);
-        int[] array = new int[10];
-        Level1.FillingArray(array);
-        Level1.PrintArray(array);
+        // Level1.InvertedNumberAsc(4);
+        // Level1.InvertedLetterAsc(4);
+        // Level1.InvertedLetterDec(4);
+        // Level1.Encrypt("mohammad", 2);
+        // Level1.Dcrypt("OQJCOOCF", 2, '-');
+        // Level1.RandomNumber(1, 30, 3);
+        // Level1.GenerateKeys();
+        // Level1.RepeatedNumber(1113,1);
+        // int[] array = new int[10];
+        // Level1.FillingArray(array);
+        // Level1.PrintArray(array);
         
     }
 }
