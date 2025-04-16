@@ -21,7 +21,6 @@ public class Level2
     {
         Console.WriteLine(IsExist(letter));
     }
-
     public static void ReverseString(string word)
     {
         for (int i = word.Length - 1; i >= 0; i--)
