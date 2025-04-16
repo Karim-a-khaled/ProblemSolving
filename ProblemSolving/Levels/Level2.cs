@@ -17,11 +17,19 @@ public class Level2
         }
         Console.WriteLine(counter);
     }
-    
     public static void IsVowel(char letter)
     {
         Console.WriteLine(IsExist(letter));
     }
+
+    public static void ReverseString(string word)
+    {
+        for (int i = word.Length - 1; i >= 0; i--)
+        {
+            Console.Write(word[i]);
+        }
+    }
+    
     private static bool IsExist(char letter)
     {
         
