@@ -24,5 +24,11 @@ class Program
             // Level1.OddNumbers([1,2,3,4,5,6]);
         #endregion
         
+        #region Level Two Problems
+
+        Level2.IsVowel('a');
+        Level2.IsVowel('k');
+
+        #endregion
     }
 }

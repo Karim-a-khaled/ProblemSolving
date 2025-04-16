@@ -2,5 +2,23 @@ namespace ProblemSolving;
 
 public class Level2
 {
+    private static readonly char[] _vowels = {'a', 'e', 'i', 'o', 'u'};
     
+    
+    public static void IsVowel(char letter)
+    {
+        Console.WriteLine(IsExist(letter));
+    }
+    private static bool IsExist(char letter)
+    {
+        
+        for (int i = 0; i < _vowels.Length; i++)
+        {
+            if (letter == _vowels[i])
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
