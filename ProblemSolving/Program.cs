@@ -6,6 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Level1.InvertedNumberASC(4);
+        //Level1.InvertedNumberASC(4);
+        Level1.InvertedLetterASC(4);
     }
 }
