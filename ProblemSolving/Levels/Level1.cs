@@ -60,4 +60,32 @@ public class Level1
             
         Console.WriteLine(newText.ToUpper());
     }    
+    
+    public static void Dcrypt(string text, int key, char operation)
+    {
+        if (operation != '+' && operation != '-')
+        {
+            throw new ArgumentException("Invalid operation");
+        }
+        text = text.ToLower();
+        Console.WriteLine(text);
+        
+        string newText = "";
+
+        for (int i = 0; i < text.Length; i++)
+        {
+            int asciiValue = 0;
+            if (operation == '+')
+            {
+                asciiValue = (int)text[i] + key;
+            }
+            else
+            {
+                asciiValue = (int)text[i] - key;
+            }
+            newText += (char)asciiValue;
+        }
+            
+        Console.WriteLine(newText.ToUpper());
+    }    
 }
