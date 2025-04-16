@@ -1,0 +1,14 @@
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/bin/Debug/net9.0/ProblemSolving
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/bin/Debug/net9.0/ProblemSolving.deps.json
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/bin/Debug/net9.0/ProblemSolving.runtimeconfig.json
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/bin/Debug/net9.0/ProblemSolving.dll
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/bin/Debug/net9.0/ProblemSolving.pdb
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/ProblemSolving.GeneratedMSBuildEditorConfig.editorconfig
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/ProblemSolving.AssemblyInfoInputs.cache
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/ProblemSolving.AssemblyInfo.cs
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/ProblemSolving.csproj.CoreCompileInputs.cache
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/ProblemSolving.dll
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/refint/ProblemSolving.dll
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/ProblemSolving.pdb
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/ProblemSolving.genruntimeconfig.cache
+/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/Debug/net9.0/ref/ProblemSolving.dll
