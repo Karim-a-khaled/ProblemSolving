@@ -176,8 +176,7 @@ public class Level1
         }
         Console.WriteLine(min);
     }
-
-    public static void SumArray(int[] array)
+    private static int SumArray(int[] array)
     {
         int sum = 0;
 
@@ -185,8 +184,17 @@ public class Level1
         {
             sum += array[i];
         }
-        Console.WriteLine(sum);
+        return sum;
     }
+
+    public static void AverageArray(int[] array)
+    {
+        int avg = SumArray(array)/ array.Length;
+        
+        Console.WriteLine(avg);
+    }
+    
+    
 
 
     private static bool CheckIfArrayIsEmpty(int[]? array)
