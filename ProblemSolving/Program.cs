@@ -17,6 +17,6 @@ class Program
         // int[] array = new int[10];
         // Level1.FillingArray(array);
         // Level1.PrintArray(array);
-        
+        Level1.SumArray([1,2,3,4]);
     }
 }

@@ -139,7 +139,6 @@ public class Level1
             Console.WriteLine(array[i]);
         }
     }
-
     public void FindMax(int[] array)
     {
         if (CheckIfArrayIsEmpty(array))
@@ -158,8 +157,7 @@ public class Level1
             }
         }
         Console.WriteLine(max);
-    }
-    
+    }   
     public void FindMin(int[] array)
     {
         if (CheckIfArrayIsEmpty(array))
@@ -177,6 +175,17 @@ public class Level1
             }
         }
         Console.WriteLine(min);
+    }
+
+    public static void SumArray(int[] array)
+    {
+        int sum = 0;
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            sum += array[i];
+        }
+        Console.WriteLine(sum);
     }
 
 
