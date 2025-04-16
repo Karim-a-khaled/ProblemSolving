@@ -18,6 +18,7 @@ class Program
         // Level1.FillingArray(array);
         // Level1.PrintArray(array);
         // Level1.SumArray([1,2,3,4]); // this was changed from void into returning an int
-         Level1.AverageArray([1,2,3,4,5]);
+        // Level1.AverageArray([1,2,3,4,5]);
+        Level1.EvenNumbers([1,2,3,4,5,6]);
     }
 }
