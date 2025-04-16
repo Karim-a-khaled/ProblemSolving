@@ -3,7 +3,7 @@ namespace ProblemSolving.Levels;
 public class Level1
 {
     private static Random random = new Random();
-    public static void InvertedNumberASC(int number)
+    public static void InvertedNumberAsc(int number)
     {
         for (int i = 1; i <= number; i++)
         {
@@ -14,7 +14,7 @@ public class Level1
             Console.WriteLine();
         }
     }
-    public static void InvertedLetterASC(int number)
+    public static void InvertedLetterAsc(int number)
     {
         char[] letters = { 
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 
@@ -30,7 +30,7 @@ public class Level1
             Console.WriteLine();
         }
     }
-    public static void InvertedLetterDEC(int number)
+    public static void InvertedLetterDec(int number)
     {
         char[] letters = { 
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 
@@ -92,7 +92,7 @@ public class Level1
         
         for (int i = 0; i < numberOfRandomNumbers; i++)
         {
-            randomNumber = random.Next(from, to);
+            randomNumber = GenerateRandomNumber();
             Console.WriteLine(randomNumber);
         }
     }
@@ -108,6 +108,42 @@ public class Level1
         
         Console.WriteLine(key);
     }
+    public static void RepeatedNumber(int number, int searchedNumber)
+    {
+        string numbers = number.ToString();
+        int counter = 0;
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            if (int.TryParse(numbers[i].ToString(), out int digit))
+            {
+                if (digit == searchedNumber)
+                {
+                    counter++;
+                }
+            }
+        }
+        Console.WriteLine(counter);
+    }
+    public static void FillingArray(int[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = GenerateRandomNumber();
+        }
+    }
+    public static void PrintArray(int[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.WriteLine(array[i]);
+        }
+    }
+    
+    private static int GenerateRandomNumber()
+    {
+        return random.Next();
+    }
     private static string GenerateKey()
     {
         string text = "";
@@ -119,23 +155,5 @@ public class Level1
         
         return text;
     }
-
-    public static void RepeatedNumber(int number, int searchedNumber)
-    {
-        string numbers = number.ToString();
-        int counter = 0;
-
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            // Try to parse the character as an integer
-            if (int.TryParse(numbers[i].ToString(), out int digit))
-            {
-                if (digit == searchedNumber)
-                {
-                    counter++;
-                }
-            }
-        }
-        Console.WriteLine(counter);
-    }
+ 
 }
