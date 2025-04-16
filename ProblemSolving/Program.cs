@@ -12,6 +12,8 @@ class Program
         //Level1.Encrypt("mohammad", 2);
         //Level1.Dcrypt("OQJCOOCF", 2, '-');
         //Level1.RandomNumber(1, 30, 3);
-        Level1.GenerateKeys();
+        //Level1.GenerateKeys();
+        Level1.RepeatedNumber(1113,1);
+        
     }
 }

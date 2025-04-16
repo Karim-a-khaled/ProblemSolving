@@ -108,7 +108,6 @@ public class Level1
         
         Console.WriteLine(key);
     }
-
     private static string GenerateKey()
     {
         string text = "";
@@ -119,5 +118,24 @@ public class Level1
         }
         
         return text;
+    }
+
+    public static void RepeatedNumber(int number, int searchedNumber)
+    {
+        string numbers = number.ToString();
+        int counter = 0;
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            // Try to parse the character as an integer
+            if (int.TryParse(numbers[i].ToString(), out int digit))
+            {
+                if (digit == searchedNumber)
+                {
+                    counter++;
+                }
+            }
+        }
+        Console.WriteLine(counter);
     }
 }
