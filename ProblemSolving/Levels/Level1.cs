@@ -87,5 +87,17 @@ public class Level1
         }
             
         Console.WriteLine(newText.ToUpper());
-    }    
+    }
+
+    public static void RandomNumber(int from, int to, int numberOfRandomNumbers)
+    {
+        Random random = new Random();
+        int randomNumber = 0;
+        
+        for (int i = 0; i < numberOfRandomNumbers; i++)
+        {
+            randomNumber = random.Next(from, to);
+            Console.WriteLine(randomNumber);
+        }
+    }
 }
