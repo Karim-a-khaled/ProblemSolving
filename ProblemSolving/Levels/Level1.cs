@@ -192,12 +192,21 @@ public class Level1
         
         Console.WriteLine(avg);
     }
-
     public static void EvenNumbers(int[] array)
     {
         for (int i = 0; i < array.Length; i++)
         {
             if (array[i] % 2 == 0)
+            {
+                Console.WriteLine(array[i]);
+            }
+        }
+    }
+    public static void OddNumbers(int[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] % 2 != 0)
             {
                 Console.WriteLine(array[i]);
             }
