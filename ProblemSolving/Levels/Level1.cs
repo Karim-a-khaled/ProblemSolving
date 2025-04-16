@@ -2,6 +2,7 @@ namespace ProblemSolving.Levels;
 
 public class Level1
 {
+    private static Random random = new Random();
     public static void InvertedNumberASC(int number)
     {
         for (int i = 1; i <= number; i++)
@@ -13,7 +14,6 @@ public class Level1
             Console.WriteLine();
         }
     }
-    
     public static void InvertedLetterASC(int number)
     {
         char[] letters = { 
@@ -30,7 +30,6 @@ public class Level1
             Console.WriteLine();
         }
     }
-    
     public static void InvertedLetterDEC(int number)
     {
         char[] letters = { 
@@ -60,7 +59,6 @@ public class Level1
             
         Console.WriteLine(newText.ToUpper());
     }    
-    
     public static void Dcrypt(string text, int key, char operation)
     {
         if (operation != '+' && operation != '-')
@@ -88,10 +86,8 @@ public class Level1
             
         Console.WriteLine(newText.ToUpper());
     }
-
     public static void RandomNumber(int from, int to, int numberOfRandomNumbers)
     {
-        Random random = new Random();
         int randomNumber = 0;
         
         for (int i = 0; i < numberOfRandomNumbers; i++)
@@ -99,5 +95,29 @@ public class Level1
             randomNumber = random.Next(from, to);
             Console.WriteLine(randomNumber);
         }
+    }
+    public static void GenerateKeys()
+    {
+        string key = "";
+
+        for (int i = 0; i < 4; i++)
+        {
+            key += GenerateKey();
+            if (i < 3) key += "-";
+        }
+        
+        Console.WriteLine(key);
+    }
+
+    private static string GenerateKey()
+    {
+        string text = "";
+
+        for (int i = 0; i < 4; i++)
+        {
+            text += (char)random.Next(65, 91);
+        }
+        
+        return text;
     }
 }

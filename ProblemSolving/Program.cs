@@ -11,6 +11,7 @@ class Program
         //Level1.InvertedLetterDEC(4);
         //Level1.Encrypt("mohammad", 2);
         //Level1.Dcrypt("OQJCOOCF", 2, '-');
-        Level1.RandomNumber(1, 30, 3);
+        //Level1.RandomNumber(1, 30, 3);
+        Level1.GenerateKeys();
     }
 }
