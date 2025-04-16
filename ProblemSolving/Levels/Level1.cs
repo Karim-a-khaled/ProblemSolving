@@ -48,4 +48,16 @@ public class Level1
             number--;
         }
     }
+    public static void Encrypt(string text, int key)
+    {
+        string newText = "";
+
+        for (int i = 0; i < text.Length; i++)
+        {
+            int asciiValue = (int)text[i] + key;
+            newText += (char)asciiValue;
+        }
+            
+        Console.WriteLine(newText.ToUpper());
+    }    
 }
