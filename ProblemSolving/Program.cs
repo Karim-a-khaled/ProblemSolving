@@ -30,7 +30,9 @@ class Program
             // Level2.IsVowel('k');
             // Level2.CountVowels("hello");
             // Level2.ReverseString("kairm");
-            Level2.IsPalindrome("");
+            // Level2.IsPalindrome("");
+            Level2.IsLeapYear(1968);
+
 
 
             #endregion

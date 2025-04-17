@@ -28,12 +28,23 @@ public class Level2
             Console.Write(word[i]);
         }
     }
-
     public static void IsPalindrome(string word)
     {
         if (word.Length >= 1)
         {
             Console.WriteLine(ReverseWord(word) == word);
+        }
+        else
+        {
+            Console.WriteLine("false");
+        }
+    }
+
+    public static void IsLeapYear(int year)
+    {
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+        {
+            Console.WriteLine("true");
         }
         else
         {
