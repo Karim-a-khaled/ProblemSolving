@@ -28,7 +28,29 @@ public class Level2
             Console.Write(word[i]);
         }
     }
-    
+
+    public static void IsPalindrome(string word)
+    {
+        if (word.Length >= 1)
+        {
+            Console.WriteLine(ReverseWord(word) == word);
+        }
+        else
+        {
+            Console.WriteLine("false");
+        }
+    }
+
+    private static string ReverseWord(string word)
+    {
+        string newWord = "";
+        for (int i = word.Length - 1; i >= 0; i--)
+        {
+            newWord += word[i];
+        }
+
+        return newWord;
+    }
     private static bool IsExist(char letter)
     {
         
