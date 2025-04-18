@@ -51,6 +51,12 @@ public class Level2
             Console.WriteLine("false");
         }
     }
+    
+    public static bool IsLeapYearOneLine(int year)
+    {
+        return ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
+    }
+
 
     private static string ReverseWord(string word)
     {

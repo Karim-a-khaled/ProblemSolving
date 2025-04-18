@@ -31,7 +31,8 @@ class Program
             // Level2.CountVowels("hello");
             // Level2.ReverseString("kairm");
             // Level2.IsPalindrome("");
-            Level2.IsLeapYear(1968);
+            // Level2.IsLeapYear(1968);
+            Level2.IsLeapYearOneLine(1968);
 
 
 
