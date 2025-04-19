@@ -57,6 +57,11 @@ public class Level2
         return ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
     }
 
+    public static void DateInWords(int day, int month, int year)
+    {
+        Console.WriteLine($"Today is : {day}/{month}/{year}");
+    }
+
 
     private static string ReverseWord(string word)
     {

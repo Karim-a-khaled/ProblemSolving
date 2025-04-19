@@ -32,8 +32,8 @@ class Program
             // Level2.ReverseString("kairm");
             // Level2.IsPalindrome("");
             // Level2.IsLeapYear(1968);
-            Level2.IsLeapYearOneLine(1968);
-
+            // Level2.IsLeapYearOneLine(1968);
+            Level2.DateInWords(1, 1, 2022);
 
 
             #endregion
