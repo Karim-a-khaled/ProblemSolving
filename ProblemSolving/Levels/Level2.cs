@@ -1,3 +1,5 @@
+using ProblemSolving.Shared;
+
 namespace ProblemSolving;
 
 public class Level2
@@ -39,7 +41,6 @@ public class Level2
             Console.WriteLine("false");
         }
     }
-
     public static void IsLeapYear(int year)
     {
         if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
@@ -51,17 +52,38 @@ public class Level2
             Console.WriteLine("false");
         }
     }
-    
     public static bool IsLeapYearOneLine(int year)
     {
         return ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
     }
-
     public static void DateInWords(int day, int month, int year)
     {
         Console.WriteLine($"Today is : {day}/{month}/{year}");
     }
 
+    public static void CompareDates(Date date1, Date date2)
+    {
+        if (date1.Year == date2.Year)
+        {
+            if (date1.Month == date2.Month)
+            {
+                if (date1.Day == date2.Day)
+                    Console.WriteLine("Equal");
+                else if (date1.Day > date2.Day)
+                    Console.WriteLine("Date 1 is Greater");
+                else
+                    Console.WriteLine("Date 2 is Greater");
+            }
+            else if (date1.Month > date2.Month)
+                Console.WriteLine("Date 1 is Greater");
+            else
+                Console.WriteLine("Date 2 is Greater");
+        }
+        else if (date1.Year > date2.Year)
+            Console.WriteLine("Date 1 is Greater");
+        else
+            Console.WriteLine("Date 2 is Greater");
+    }
 
     private static string ReverseWord(string word)
     {

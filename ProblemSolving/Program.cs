@@ -1,4 +1,5 @@
 ﻿using ProblemSolving.Levels;
+using ProblemSolving.Shared;
 
 namespace ProblemSolving;
 
@@ -33,7 +34,10 @@ class Program
             // Level2.IsPalindrome("");
             // Level2.IsLeapYear(1968);
             // Level2.IsLeapYearOneLine(1968);
-            Level2.DateInWords(1, 1, 2022);
+            // Level2.DateInWords(1, 1, 2022);
+            Date date1 = new Date(1,1,2022);
+            Date date2 = new Date(1,1,2000);
+            Level2.CompareDates(date1, date2);
 
 
             #endregion
