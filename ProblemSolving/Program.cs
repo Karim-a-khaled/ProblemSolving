@@ -35,9 +35,23 @@ class Program
             // Level2.IsLeapYear(1968);
             // Level2.IsLeapYearOneLine(1968);
             // Level2.DateInWords(1, 1, 2022);
-            Date date1 = new Date(1,1,2022);
-            Date date2 = new Date(1,1,2000);
-            Level2.CompareDates(date1, date2);
+            // Date date1 = new Date(1,1,2022);
+            // Date date2 = new Date(1,1,2000);
+            // Level2.CompareDates(date1, date2);
+
+
+            #endregion
+            
+            #region Level Three Problems
+
+                Level3.FindTheMissingNumber([1,2,3,4,5,6,7,8,10]);
+                // Level3.();
+                // Level3.();
+                // Level3.();
+                // Level3.();
+                // Level3.();
+                // Level3.();
+                // Level3.();
 
 
             #endregion

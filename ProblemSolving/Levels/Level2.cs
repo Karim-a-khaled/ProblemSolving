@@ -60,7 +60,6 @@ public class Level2
     {
         Console.WriteLine($"Today is : {day}/{month}/{year}");
     }
-
     public static void CompareDates(Date date1, Date date2)
     {
         if (date1.Year == date2.Year)
