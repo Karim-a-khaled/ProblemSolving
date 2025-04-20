@@ -23,7 +23,6 @@ public class Level3
             Console.WriteLine(-1);
         }
     }
-
     public static void FirstNonRepeatingCharacter(string word)
     {
         int counter = 0;
@@ -64,7 +63,6 @@ public class Level3
         SortIntArray(newArr);
         PrintArray(newArr);
     }
-
     public static void IsAnagram(string word1, string word2)
     {
         if (word1.Length != word2.Length)
@@ -85,6 +83,18 @@ public class Level3
             Console.WriteLine("false");     
             return;       
         }
+    }
+
+    public static void SumUntilSingleDigit(int number)
+    {
+        int sum = 0;
+        while (number > 9)
+        {
+            sum += number % 10;
+            number /= 10;
+        }
+        number = sum;
+        Console.WriteLine(number);
     }
     
     private static void PrintArray(int[] arr)
