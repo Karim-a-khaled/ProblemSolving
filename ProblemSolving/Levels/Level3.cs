@@ -125,6 +125,26 @@ public class Level3
         }
         Console.WriteLine(result);
     }
+    public static void MoveZeros(int[] arr)
+    {
+        int counter = 0;
+        int[] newArr = new int[arr.Length];
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] != 0)
+            {
+                newArr[counter] = arr[i];
+                counter++;           
+            }
+        }
+
+        for (int i = arr.Length - 1; i < newArr.Length; i++)
+        {
+            newArr[i] = 0;
+        }
+        
+        PrintArray(newArr);
+    }
     
     
     private static void PrintArray(int[] arr)
