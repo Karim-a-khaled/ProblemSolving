@@ -95,7 +95,6 @@ public class Level3
         number = sum;
         Console.WriteLine(number);
     }
-
     public static void FindTheSingleNumber(int[] arr)
     {
         int counter = 0;
@@ -116,6 +115,15 @@ public class Level3
             }
             counter = 0;       
         }
+    }
+    public static void FindTheSingleNumberUsingXor(int[] arr)
+    {
+        int result = 0;
+        foreach (int num in arr)
+        {
+            result ^= num; 
+        }
+        Console.WriteLine(result);
     }
     
     
