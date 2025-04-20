@@ -46,8 +46,8 @@ class Program
 
             // Level3.FindTheMissingNumber([1,2,3,4,5,6,7,8,10]);
             // Level3.FirstNonRepeatingCharacter("leetcode");
-            Level3.MergeTwoSortedArrays([1,3,5], [2,4,6]);
-            // Level3.();
+            // Level3.MergeTwoSortedArrays([1,3,5], [2,4,6]);
+            Level3.IsAnagram("edcba", "abcdde");;
             // Level3.();
             // Level3.();
             // Level3.();
