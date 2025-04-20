@@ -42,18 +42,18 @@ class Program
 
             #endregion
             
-            #region Level Three Problems
+        #region Level Three Problems
 
-                Level3.FindTheMissingNumber([1,2,3,4,5,6,7,8,10]);
-                // Level3.();
-                // Level3.();
-                // Level3.();
-                // Level3.();
-                // Level3.();
-                // Level3.();
-                // Level3.();
+            // Level3.FindTheMissingNumber([1,2,3,4,5,6,7,8,10]);
+            Level3.FirstNonRepeatingCharacter("leetcode");
+            // Level3.();
+            // Level3.();
+            // Level3.();
+            // Level3.();
+            // Level3.();
+            // Level3.();
 
 
-            #endregion
+        #endregion
     }
 }
