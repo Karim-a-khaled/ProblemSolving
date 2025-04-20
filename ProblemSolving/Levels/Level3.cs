@@ -84,7 +84,6 @@ public class Level3
             return;       
         }
     }
-
     public static void SumUntilSingleDigit(int number)
     {
         int sum = 0;
@@ -96,6 +95,29 @@ public class Level3
         number = sum;
         Console.WriteLine(number);
     }
+
+    public static void FindTheSingleNumber(int[] arr)
+    {
+        int counter = 0;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            for (int j = 0; j < arr.Length; j++)
+            {
+                if (arr[i] == arr[j] && i != j)
+                {
+                    counter++;
+                    break;
+                }
+            }
+            if (counter == 0)
+            {
+                Console.WriteLine(arr[i]);
+                break;
+            }
+            counter = 0;       
+        }
+    }
+    
     
     private static void PrintArray(int[] arr)
     {
