@@ -47,7 +47,31 @@ public class Level3
             counter = 0;
         }
     }
+    public static void MergeTwoSortedArrays(int[] arr1, int[] arr2)
+    {
+        int[] newArr = new int[arr1.Length + arr2.Length];
 
+        for (int i = 0; i < arr1.Length; i++)
+        {
+            newArr[i] = arr1[i];
+        }
+        
+        for (int i = newArr.Length - 1; i >= 0; i--)
+        {
+            newArr[i] = arr2[i];
+        }
+        
+        SortArray(newArr);
+        PrintArray(newArr);
+    }
+
+    private static void PrintArray(int[] arr)
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            Console.WriteLine(arr[i]);       
+        }
+    }
     private static void SortArray(int[] arr)
     {
         Array.Sort(arr);
