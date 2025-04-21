@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/ProblemSolving.csproj",
+      "projectUniqueName": "/home/karim/programming/basics/ProblemSolving/ProblemSolving/ProblemSolving.csproj",
       "projectName": "ProblemSolving",
-      "projectPath": "/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/ProblemSolving.csproj",
+      "projectPath": "/home/karim/programming/basics/ProblemSolving/ProblemSolving/ProblemSolving.csproj",
       "packagesPath": "/home/karim/.nuget/packages/",
-      "outputPath": "/home/karim/projects/backend/ProblemSolving/ProblemSolving/ProblemSolving/obj/",
+      "outputPath": "/home/karim/programming/basics/ProblemSolving/ProblemSolving/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/karim/.nuget/NuGet/NuGet.Config"
@@ -42,9 +42,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/karim/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/karim/.dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

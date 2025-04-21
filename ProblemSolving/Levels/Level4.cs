@@ -101,4 +101,20 @@ public class Level4
         
         ArrayFunctions.PrintArray(newArr.ToArray());
     }
+
+    public static void ContainsDuplicates(int[] arr)
+    {
+        Array.Sort(arr);
+        int counter = 0;
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if(arr[counter] == arr[i])
+            {
+                Console.WriteLine("true");
+                break;
+            }
+            counter++;
+        }
+        Console.WriteLine("false");
+    }
 }
