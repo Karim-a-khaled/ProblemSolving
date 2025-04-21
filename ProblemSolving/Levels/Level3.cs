@@ -1,10 +1,12 @@
+using ProblemSolving.Shared;
+
 namespace ProblemSolving.Levels;
 
 public class Level3
 {
     public static void FindTheMissingNumber(int[] arr)
     {
-        SortIntArray(arr);
+        ArrayFunctions.SortIntArray(arr);
         int counter = 0;
         int number = arr[0];
         for (int i = 0; i < arr.Length; i++)
@@ -60,8 +62,8 @@ public class Level3
             newArr[i] = arr2[i];
         }
         
-        SortIntArray(newArr);
-        PrintArray(newArr);
+        ArrayFunctions.SortIntArray(newArr);
+        ArrayFunctions.PrintArray(newArr);
     }
     public static void IsAnagram(string word1, string word2)
     {
@@ -70,8 +72,8 @@ public class Level3
             Console.WriteLine("false");
             return;
         }
-        word1 = SortStringArray(word1.ToArray());
-        word2 = SortStringArray(word2.ToArray());
+        word1 = ArrayFunctions.SortStringArray(word1.ToArray());
+        word2 = ArrayFunctions.SortStringArray(word2.ToArray());
 
         if (word1 == word2)
         {
@@ -143,7 +145,7 @@ public class Level3
             newArr[i] = 0;
         }
         
-        PrintArray(newArr);
+        ArrayFunctions.PrintArray(newArr);
     }
     public static void CountWordsInSentence(string sentence)
     {
@@ -157,51 +159,5 @@ public class Level3
             }
         }
         Console.WriteLine(counter);
-    }
-    public static void FindMax(int[] arr)
-    {
-        int max = arr[0];
-
-        for (int i = 1; i < arr.Length; i++)
-        {
-            if (arr[i] > max)
-            {
-                max = arr[i];
-            }
-        }
-        Console.WriteLine(max);
-    }
-    
-    public static void FindMin(int[] arr)
-    {
-        int min = arr[0];
-
-        for (int i = 1; i < arr.Length; i++)
-        {
-            if (arr[i] < min)
-            {
-                min = arr[i];
-            }
-        }
-        Console.WriteLine(min);
-    }
-
-    
-    
-    private static void PrintArray(int[] arr)
-    {
-        for (int i = 0; i < arr.Length; i++)
-        {
-            Console.WriteLine(arr[i]);       
-        }
-    }
-    private static void SortIntArray(int[] arr)
-    {
-        Array.Sort(arr);
-    }
-    private static string SortStringArray(char[] arr)
-    {
-        Array.Sort(arr);
-        return new string(arr);
     }
 }
