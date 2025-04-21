@@ -55,7 +55,6 @@ public class Level4
             Console.WriteLine("true");
         }
     }
-
     public static void MaximumConsecutiveOnes(int[] arr)
     {
         int counter = 0;
@@ -76,5 +75,30 @@ public class Level4
             }
         }
         Console.WriteLine(max);
+    }
+    public static void RemoveDuplicates(int[] arr)
+    {
+        List<int> newArr = new List<int>();
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            int counter = 0;
+
+            for (int j = 0; j < newArr.Count; j++)
+            {
+                if (arr[i] == newArr[j])
+                {
+                    counter++;
+                    break;
+                }
+            }
+
+            if (counter == 0)
+            {
+                newArr.Add(arr[i]);
+            }
+        }
+        
+        ArrayFunctions.PrintArray(newArr.ToArray());
     }
 }

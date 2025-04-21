@@ -44,4 +44,12 @@ public class ArrayFunctions
         }
         return min;
     }
+
+    public static void FillArr(int[] arr)
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = 0;
+        }
+    }
 }
