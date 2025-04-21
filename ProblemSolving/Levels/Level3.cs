@@ -145,7 +145,6 @@ public class Level3
         
         PrintArray(newArr);
     }
-
     public static void CountWordsInSentence(string sentence)
     {
         char delim = ' ';
@@ -158,6 +157,20 @@ public class Level3
             }
         }
         Console.WriteLine(counter);
+    }
+
+    public static void FindMax(int[] arr)
+    {
+        int max = arr[0];
+
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if (arr[i] > max)
+            {
+                max = arr[i];
+            }
+        }
+        Console.WriteLine(max);
     }
     
     

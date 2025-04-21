@@ -51,8 +51,10 @@ class Program
             // Level3.SumUntilSingleDigit(942);
             // Level3.FindTheSingleNumber([2,2,1]);
             // Level3.MoveZeros([0,1,0,3,12]);
-            Level3.CountWordsInSentence("HELLO HELLO HELLO HELLO HELLO HELLO");
-
+            // Level3.CountWordsInSentence("HELLO HELLO HELLO HELLO HELLO HELLO");
+             Level3.FindMax([10,2,23,4,5,5,6,7]);
+            // Level3.();
+            // Level3.();
 
         #endregion
     }
