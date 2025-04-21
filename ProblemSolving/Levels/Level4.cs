@@ -33,5 +33,26 @@ public class Level4
             }
         }
         Console.WriteLine(newWord);
-    }   
+    }
+
+    public static void CheckIfSorted(int[] arr)
+    {
+        int n = 0;
+        int counter = 0;
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if (arr[i] < arr[n])
+            {
+                counter++;
+                Console.WriteLine("false");
+                break;
+            }
+            n++;
+        }
+
+        if (counter == 0)
+        {
+            Console.WriteLine("true");
+        }
+    }
 }
