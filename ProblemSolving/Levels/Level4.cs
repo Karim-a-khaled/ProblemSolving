@@ -1,6 +1,7 @@
+using System.Collections.Specialized;
 using ProblemSolving.Shared;
 
-namespace ProblemSolving;
+namespace ProblemSolving.Levels;
 
 public class Level4
 {
@@ -34,7 +35,6 @@ public class Level4
         }
         Console.WriteLine(newWord);
     }
-
     public static void CheckIfSorted(int[] arr)
     {
         int n = 0;
@@ -54,5 +54,27 @@ public class Level4
         {
             Console.WriteLine("true");
         }
+    }
+
+    public static void MaximumConsecutiveOnes(int[] arr)
+    {
+        int counter = 0;
+        int max = 0;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] == 1)
+            {
+                counter++;
+                if (max < counter)
+                {
+                    max = counter;
+                }
+            }
+            else
+            {
+                counter = 0;
+            }
+        }
+        Console.WriteLine(max);
     }
 }

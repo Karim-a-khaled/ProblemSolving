@@ -58,8 +58,8 @@ class Program
 
             // Level4.SecondLargestNumber([1,2,3,4,5,6,7,8,9]);              
             // Level4.CapitalizeFirstLetter("hello");              
-             Level4.CheckIfSorted([-1,2,3,4,5,6,7,8,9,10]);                                    
-            // Level4.();              
+            // Level4.CheckIfSorted([-1,2,3,4,5,6,7,8,9,10]);                                    
+             Level4.MaximumConsecutiveOnes([1,1,1,1,2,1,1,1,0,0,0,1,1,1,0,1,0,1,1,1,1,1,1]);              
             // Level4.();              
             // Level4.();              
             // Level4.();              
