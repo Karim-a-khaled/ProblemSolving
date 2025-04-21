@@ -145,6 +145,20 @@ public class Level3
         
         PrintArray(newArr);
     }
+
+    public static void CountWordsInSentence(string sentence)
+    {
+        char delim = ' ';
+        int counter = 1;
+        for (int i = 0; i < sentence.Length; i++)
+        {
+            if (sentence[i] == delim)
+            {
+                counter++;
+            }
+        }
+        Console.WriteLine(counter);
+    }
     
     
     private static void PrintArray(int[] arr)

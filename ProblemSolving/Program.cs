@@ -48,10 +48,10 @@ class Program
             // Level3.FirstNonRepeatingCharacter("leetcode");
             // Level3.MergeTwoSortedArrays([1,3,5], [2,4,6]);
             // Level3.IsAnagram("edcba", "abcdde");;
-            //Level3.SumUntilSingleDigit(942);
+            // Level3.SumUntilSingleDigit(942);
             // Level3.FindTheSingleNumber([2,2,1]);
-            Level3.MoveZeros([0,1,0,3,12]);
-            // Level3.();
+            // Level3.MoveZeros([0,1,0,3,12]);
+            Level3.CountWordsInSentence("HELLO HELLO HELLO HELLO HELLO HELLO");
 
 
         #endregion
