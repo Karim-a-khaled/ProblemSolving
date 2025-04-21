@@ -11,11 +11,27 @@ public class Level4
 
         for (int i = 0; i < arr.Length; i++)
         {
-            if (arr[i] > secondMax && arr[i] != max)
+            if (arr[i] >= secondMax && arr[i] != max)
             {
                 secondMax = arr[i];
             }
         }
         Console.WriteLine(secondMax);
     }
+    public static void CapitalizeFirstLetter(string word)
+    {
+        string newWord = "";
+        for (int i = 0; i < word.Length; i++)
+        {
+            if (i == 0)
+            {
+                newWord += word[i].ToString().ToUpper();
+            }
+            else
+            {
+                newWord += word[i];
+            }
+        }
+        Console.WriteLine(newWord);
+    }   
 }

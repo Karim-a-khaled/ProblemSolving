@@ -57,7 +57,7 @@ class Program
         #region Level Four Problems
 
              Level4.SecondLargestNumber([1,2,3,4,5,6,7,8,9]);              
-            // Level4.();              
+             Level4.CapitalizeFirstLetter("hello");              
             // Level4.();              
             // Level4.();              
             // Level4.();              
