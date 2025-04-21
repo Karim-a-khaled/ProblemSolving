@@ -158,7 +158,6 @@ public class Level3
         }
         Console.WriteLine(counter);
     }
-
     public static void FindMax(int[] arr)
     {
         int max = arr[0];
@@ -172,6 +171,21 @@ public class Level3
         }
         Console.WriteLine(max);
     }
+    
+    public static void FindMin(int[] arr)
+    {
+        int min = arr[0];
+
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if (arr[i] < min)
+            {
+                min = arr[i];
+            }
+        }
+        Console.WriteLine(min);
+    }
+
     
     
     private static void PrintArray(int[] arr)
